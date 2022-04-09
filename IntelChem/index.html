@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <title>IntelChem</title>
+    <link rel="Stylesheet" href="css/Stylesheet.css">
+    <link rel="stylesheet" href="css/assets.css" media="all">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+<section class="showcase">
+    <header>
+        <h2 class="logo">IntelChem</h2>
+        <div class="toggle"></div>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </header>
+    <video src="lv_0_20210331171605.mp4" muted loop autoplay >
+    </video>
+    <div class="overlay"></div>
+</section>
+<div class="menu">
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="Test1.html">Тест №1</a></li>
+        <li><a href="Test2.html">Эксперименты</a></li>
+        <li><a href="About.html">Подробнее</a></li>
+    </ul>
+</div>
+<script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>IntelChem</title>
+    <link rel="stylesheet" href="css/Stylesheet_1.css">
+    <link rel="Stylesheet" href="css/Stylesheet.css">
+</head>
+<body>
+<section class="showcase">
+<header>
+    <h2 class="logo">IntelChem</h2>
+    <div class="toggle"></div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</header>
+    <div class="overlay"></div>
+    <div class="start_btn"><button>Начать</button></div>
+
+    <div class="info_box">
+        <div class="info-title"><span>Правила</span></div>
+        <div class="info-list">
+            <div class="info">1. Вы имеете <span>15 секунд</span> на каждый ответ.</div>
+            <div class="info">2. Выбранный вами ответ не может быть изменен.</div>
+            <div class="info">3. При окончании таймера вы не сможете выбрать ответ.</div>
+            <div class="info">4. Вы не можете покинуть тест,если вы его начали.</div>
+            <div class="info">5. Вы получаете баллы на основе ваших ответов.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Выйти</button>
+            <button class="restart">Продолжить</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Тест</div>
+            <div class="timer">
+                <div class="time_left_txt">Осталось</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_que">
+            </div>
+            <button class="next_btn">Далее</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Вы прошли тест!</div>
+        <div class="score_text">
+        </div>
+        <div class="buttons">
+            <button class="restart">Повторить</button>
+            <button class="quit">Выйти</button>
+        </div>
+    </div>
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+</section>
+<div class="menu">
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="Test1.html">Тест №1</a></li>
+        <li><a href="Test2.html">Эксперименты</a></li>
+        <li><a href="About.html">Подробнее</a></li>
+    </ul>
+</div>
+
+<script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+    })
+
+</script>
+</body>
+</html>
